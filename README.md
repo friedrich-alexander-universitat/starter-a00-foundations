@@ -8,13 +8,18 @@ Arithmetic operations
 String manipulation
 Boolean logic
 Functions and recursion
+
+
  Files
 assignment.ipynb — complete this notebook and submit it
+
+
  Instructions
 Work only inside cells marked # STUDENT CELL
 Do not rename functions or variables
 Do not modify test cells
 Run all cells before submitting
+
 Submission
 Complete all tasks in assignment.ipynb
 Commit your changes
@@ -30,10 +35,13 @@ Go to https://colab.research.google.com
 Click GitHub
 Paste your repository URL
 Open assignment.ipynb
+
+
 Notes
 Ensure your code runs without errors
 Follow function specifications exactly
 Partial solutions may receive partial credit
+
 Total Points
 
 20 points
