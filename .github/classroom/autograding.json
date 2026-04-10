@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "A00 visible checks",
+      "setup": "python -m pip install --upgrade pip nbformat",
+      "run": "python visible_grader/check_a00.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    }
+  ]
+}
