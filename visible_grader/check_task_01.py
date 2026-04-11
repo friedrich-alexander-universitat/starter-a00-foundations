@@ -3,7 +3,22 @@ import sys
 
 def load_namespace():
     nb = nbformat.read("assignment.ipynb", as_version=4)
-    code = "\n\n".join(cell.source for cell in nb.cells if cell.cell_type == "code")
+
+    code_chunks = []
+    for cell in nb.cells:
+        if cell.cell_type != "code":
+            continue
+
+        src = cell.source
+
+        if src.strip().startswith("# VISIBLE TEST"):
+            continue
+        if src.strip().startswith("# METADATA"):
+            continue
+
+        code_chunks.append(src)
+
+    code = "\n\n".join(code_chunks)
     ns = {}
     exec(code, ns)
     return ns
